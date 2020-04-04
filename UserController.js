@@ -12,9 +12,7 @@ exports.getUser = (req, res)=>{
                     title:'Users',
                     data : docs});
           });
-              
-              
-            }
+        }
         client.close();
     });    
 };
