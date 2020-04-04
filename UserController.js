@@ -13,6 +13,5 @@ exports.getUser = (req, res)=>{
                     data : docs});
           });
         }
-        client.close();
     });    
 };

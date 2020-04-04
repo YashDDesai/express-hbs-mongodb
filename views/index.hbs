@@ -1,7 +1,11 @@
 <h1 class="text-center">{{title}}</h1>
 
 <ul>
-{{#each data}}
-    <li>{{_id}} | {{name}} |  {{email}}</li>
-{{/each}}
+{{#if data}}
+    {{#each data}}
+        <li>{{_id}} | {{name}} |  {{email}}</li>
+    {{/each}}
+{{else}}
+    <h3>Data not found</h3>
+{{/if}}
 </ul>
